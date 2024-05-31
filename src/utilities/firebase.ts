@@ -13,7 +13,7 @@ const firebaseConfig = {
   authDomain: "",
   projectId: "",
   storageBucket: "",
-  messagingSenderId: "4",
+  messagingSenderId: "",
   appId: "",
 };
 

@@ -38,7 +38,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [dataError, setDataError] = useState<unknown>(null);
 
-  console.log("rendered App");
   return (
     <DataContext.Provider
       value={{

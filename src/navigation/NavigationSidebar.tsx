@@ -33,7 +33,6 @@ export function NavigationSidebar({
             setPageNumber(id);
           }}
           onFocus={() => {
-            console.log("i'm focused:", component["text"]);
             setNavigationIsOpen(true);
           }}
           onBlur={() => setNavigationIsOpen(false)}

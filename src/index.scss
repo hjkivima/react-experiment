@@ -1,0 +1,92 @@
+:root {
+  --michigan-blue: hsl(209, 100%, 15%);
+  --blue: hsl(209, 100%, 38%);
+  --michigan-maize: hsl(48, 100%, 51%);
+  --background-color: hsl(210 50% 100%);
+  --main-padding: 0.75em;
+  --navigation-margin: 0.5em;
+
+  --font-size--button: clamp(1.7rem, 2vw + 0.75rem, 1.5rem);
+}
+
+*,
+*::before,
+*::after {
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Lato", "Open Sans", "Mulish", "Inter", "Roboto", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  color: black;
+  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.4rem);
+  line-height: 1.4;
+  letter-spacing: -0.15px;
+  word-spacing: 1px;
+}
+
+header {
+  padding: 0.1em;
+  // text-transform: uppercase;
+}
+
+h1 {
+  margin-block: 0;
+  background: var(--background-color);
+  // font-size: var(--font-size--large);
+
+  // padding: 0.5em 0.75em;
+  padding-block: 0em;
+}
+
+p {
+  margin-block: 0.5em;
+  padding-block: 0em;
+  padding-left: 0em;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  // background: var(--michigan-blue);
+  // padding: 0.1em;
+}
+
+button {
+  display: block;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 700;
+  color: #000;
+  background: hsl(210, 50%, 100%);
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  font-size: var(--font-size--button);
+  border: 2px solid var(--blue);
+
+  box-shadow: 6px 3px 6px rgb(0 0 0 / 0.2);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: calc(var(--navigation-margin) * 0.5) solid hsl(0, 100%, 50%);
+}
+
+.next-button {
+  background: var(--blue);
+  color: white;
+}

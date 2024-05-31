@@ -1,0 +1,51 @@
+.button {
+  align-self: flex-end;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 400;
+  color: #000;
+  background-color: var(--button-color);
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 0.2);
+  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+  cursor: pointer;
+  outline: 2px solid hsl(210 50% 50%);
+}
+
+@media (max-width: 500px) {
+  .button {
+    align-self: stretch;
+  }
+}
+
+.button:focus {
+  transform: scale(1.05);
+  outline: 4px solid hsl(210 50% 50%);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    transform: scale(1.05);
+  }
+}
+
+@supports selector(:focus-visible) {
+  .button:focus {
+    transform: scale(1);
+  }
+
+  .button:focus-visible {
+    transform: scale(1.05);
+    outline: 4px solid hsl(210 50% 50%);
+  }
+
+  @media (hover: hover) {
+    .button:hover {
+      transform: scale(1.05);
+    }
+  }
+}

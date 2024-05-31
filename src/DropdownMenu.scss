@@ -1,0 +1,7 @@
+.dropdown-menu {
+  cursor: pointer;
+  margin-bottom: 1em;
+  &--container {
+    padding-inline: var(--question-left-padding);
+  }
+}
